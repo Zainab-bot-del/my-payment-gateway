@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Payment Gateway</title>
+</head>
+<body>
+    <h1>Payment Gateway Demo</h1>
+
+    <h2>Create User</h2>
+    <input type="text" id="name" placeholder="Name">
+    <input type="password" id="password" placeholder="Password">
+    <button onclick="createUser()">Create User</button>
+    <p id="createUserResult"></p>
+
+    <h2>Check Wallet</h2>
+    <input type="number" id="walletId" placeholder="User ID">
+    <button onclick="checkWallet()">Check Balance</button>
+    <p id="walletResult"></p>
+
+    <h2>Add Money</h2>
+    <input type="number" id="addUserId" placeholder="User ID">
+    <input type="number" id="addAmount" placeholder="Amount">
+    <button onclick="addMoney()">Add Money</button>
+    <p id="addMoneyResult"></p>
+
+    <h2>Transfer Money</h2>
+    <input type="number" id="fromId" placeholder="From User ID">
+    <input type="number" id="toId" placeholder="To User ID">
+    <input type="number" id="transferAmount" placeholder="Amount">
+    <button onclick="transferMoney()">Transfer</button>
+    <p id="transferResult"></p>
+
+    <script src="frontend.js"></script>
+</body>
+</html>
